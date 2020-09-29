@@ -7,10 +7,10 @@ const ReviewForm = (props) => {
       <from>
         <div>Have an experience with [Airline Name]? Share a review!</div>
         <div className="field">
-          <input type="text" name="title" placeholder="Review Title">
+          <input type="text" name="title" placeholder="Review Title"/>
         </div>
         <div className="field">
-          <input type="text" name="description" placeholder="Review Description">
+          <input type="text" name="description" placeholder="Review Description"/>
         </div>
         <div className="field">
           <div className="ratingContainer">
