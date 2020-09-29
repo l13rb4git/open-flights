@@ -33,40 +33,38 @@ const Grid = styled.div`
 
 
 const Airlines = () => {
-    const [airlines, setAirlines] = useState([]);
+  const [airlines, setAirlines] = useState([]);
 
 
-    useEffect(() => {
-        axios.get('api/v1/airlines.json')
-        .then( resp => {
-            setAirlines(resp.data.data)
-        })
-        .catch( resp => console.log(resp) )
-    }, [airlines.length])
+  useEffect(() => {
+    axios.get('api/v1/airlines.json')
+      .then( resp => setAirlines(resp.data.data) )
+      .catch( resp => console.log(resp) )
+  }, [airlines.length])
 
 
-    const grid = airlines.map( item => {
-        return (
-            <Airline 
-                key={item.attributes.name}
-                attributes={item.attributes}
-            />
-        )
-    })
-
+  const grid = airlines.map( item => {
     return (
-        <Home>
-            <Header>
-                <h1>OpenFlights</h1>
-                <Subheader>
-                    Honest, unbiased airlines review.
-                </Subheader>
-            </Header>
-            <Grid>
-                {grid}
-            </Grid>
-        </Home>
+      <Airline 
+        key={item.attributes.name}
+        attributes={item.attributes}
+      />
     )
+  })
+
+  return (
+    <Home>
+      <Header>
+        <h1>OpenFlights</h1>
+        <Subheader>
+          Honest, unbiased airlines review.
+        </Subheader>
+      </Header>
+      <Grid>
+        {grid}
+      </Grid>
+    </Home>
+  )
 }
 
 export default Airlines

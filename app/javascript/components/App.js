@@ -5,12 +5,12 @@ import Airline from '../components/Airline/Airline'
 
 
 const App = () => {
-    return (
-        <Switch>
-            <Route exact path="/" component={Airlines}/> 
-            <Route exact path="/airlines/:slug" component={Airline}/> 
-        </Switch>
-    )
+  return (
+    <Switch>
+      <Route exact path="/" component={Airlines}/> 
+      <Route exact path="/airlines/:slug" component={Airline}/> 
+    </Switch>
+  )
 }
 
 export default App 

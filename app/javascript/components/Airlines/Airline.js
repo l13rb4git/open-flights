@@ -44,18 +44,18 @@ const LinkWrapper = styled.div`
 
 
 const Airline = (props) => {
-    return (
-        <Card>
-            <AirlineLogo>
-                <img src={props.attributes.image_url} alt={props.attributes.name} />
-            </AirlineLogo>
-            <AirlineName>{props.attributes.name}</AirlineName>
-            <div class="airline-score">{props.attributes.avg_score}</div>
-            <LinkWrapper>
-                <Link to={`/airlines/${props.attributes.slug}`}>View Airline</Link>
-            </LinkWrapper>
-        </Card>
-    )
+  return (
+    <Card>
+      <AirlineLogo>
+        <img src={props.attributes.image_url} alt={props.attributes.name} />
+      </AirlineLogo>
+      <AirlineName>{props.attributes.name}</AirlineName>
+      <div class="airline-score">{props.attributes.avg_score}</div>
+      <LinkWrapper>
+        <Link to={`/airlines/${props.attributes.slug}`}>View Airline</Link>
+      </LinkWrapper>
+    </Card>
+  )
 }
 
 export default Airline
