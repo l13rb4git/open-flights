@@ -2,16 +2,19 @@ import React from 'react'
 
 
 const Header = (props) => {
+  const {name, image_url, avg_score} = props.attributes
+  const numberOfReviews = props.reviews.length
+
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <h1>
-        <img src="" alt="">
-        Airline Name
+        <img src={image_url} alt={name}/>
+        {name}
       </h1>
       <div>
-        <div class="totalReviews"></div>
-        <div class="starRating"></div>
-        <div class="totalOutOf">3 out 5</div>
+        <div className="totalReviews">{numberOfReviews} User Reviews</div>
+        <div className="starRating"></div>
+        <div className="totalOutOf">{avg_score} out 5</div>
       </div>
     </div>
   )
