@@ -25,7 +25,11 @@ const Airline = (props) => {
   return (
     <div className="wrapper">
       <div className="column">
-        { loaded && <Header attributes={airline.data.attributes}/> }
+        { loaded && <Header 
+                      attributes={airline.data.attributes}
+                      reviews={airline.included} 
+                    />
+        }
         <div className="reviews"></div>
       </div>
       <div className="column">
