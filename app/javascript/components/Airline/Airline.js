@@ -73,6 +73,11 @@ const Airline = (props) => {
   }
 
 
+  const setRating = (score, e) => {
+    setReview({...review, score})
+  }
+
+
   return (
     <Wrapper>
       { loaded && 
@@ -90,6 +95,7 @@ const Airline = (props) => {
                         handleChange={handleChange}
                         handleSubmit={handleSubmit}
                         review={review}
+                        setRating={setRating}
             />
           </Column>
       </Fragment>
