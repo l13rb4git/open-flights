@@ -5,6 +5,61 @@ import Hover from './Stars/Hover'
 import Selected from './Stars/Selected'
 
 
+const Wrapper = styled.div`
+    background: #000;
+    padding: 20px; 
+    height: 100vh;
+    padding-top: 100px;
+`
+
+const Field = styled.div`
+  border-radius: 4px;
+
+  input {
+      width: 96%;
+      min-height: 50px;
+      border-radius: 4px;
+      border: 1px solid #e6e6e6;
+      margin: 0 0 12px 0;
+      padding: 12px;
+  }
+
+  textarea {
+      width: 96%;
+      min-height: 80px;
+      border-radius: 4px;
+      border: 1px solid #e6e6e6;
+      margin: 12px 0;
+      padding: 12px;
+  }
+`
+
+const Headline = styled.div`
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+`
+
+const SubmitBtn = styled.button`
+    color: #fff;
+    background: #333;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+    border: 1px solid #fff;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+      border: 1px solid #fff;
+    }
+`
+
 const RatingContainer = styled.div`
     text-align: center;
     border-radius: 4px;
@@ -15,10 +70,14 @@ const RatingContainer = styled.div`
 `
 
 const RatingTitle = styled.div`
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
 `
 
 const RatingBox = styled.div`
     background: #fff;
+    margin-top: 12px;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -63,26 +122,26 @@ const ReviewForm = (props) => {
   })
 
   return (
-    <div className="wrapper">
+    <Wrapper>
       <form onSubmit={props.handleSubmit}>
-        <div>Have an experience with {props.attributes.name}? Share a review!</div>
-        <div className="field">
-          <input onChange={props.handleChange} value={props.review.title || ''} type="text" name="title" placeholder="Review Title"/>
-        </div>
-        <div className="field">
+        <Headline>Have an experience with {props.attributes.name}? Share a review!</Headline>
+          <Field>
+            <input onChange={props.handleChange} value={props.review.title || ''} type="text" name="title" placeholder="Review Title"/>
+          </Field>
+        <Field>
           <input onChange={props.handleChange} value={props.review.description || ''} type="text" name="description" placeholder="Review Description"/>
-        </div>
-        <div className="field">
+        </Field>
+        <Field>
           <RatingContainer>
             <RatingTitle>Rate This Airline</RatingTitle>
             <RatingBox>
               {ratingOptions}
             </RatingBox>
           </RatingContainer>
-        </div>
-        <button type="submit">Submit Your Review</button>
+        </Field>
+        <SubmitBtn type="submit">Submit Your Review</SubmitBtn>
       </form>
-    </div>
+    </Wrapper>
   )
 }
 
