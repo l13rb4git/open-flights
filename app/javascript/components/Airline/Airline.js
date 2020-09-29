@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Header from './Header'
 
 
 const Airline = (props) => {
@@ -19,7 +20,7 @@ const Airline = (props) => {
   return (
     <div className="wrapper">
       <div className="column">
-        <div className="header"></div>
+        <Header attributes={airline.data.attributes}/>
         <div className="reviews"></div>
       </div>
       <div className="column">
