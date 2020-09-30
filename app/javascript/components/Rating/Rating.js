@@ -1,19 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
-
-
-const StarWrapper = styled.span`
-`
-
-const Stars = styled.span`
-`
+import './Rating.css'
 
 
 const Rating = (props) => {
+  const score = (props.score/5) * 100
+
   return (
-    <StarWrapper>
-      <Stars></Stars>
-    </StarWrapper>
+    <span className="star-wrapper">
+      <span className="stars" style={{width: score + "%"}}></span>
+    </span>
   )
 }
 
