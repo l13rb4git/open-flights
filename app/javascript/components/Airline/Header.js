@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Rating from '../Rating/Rating'
 
 
 const Wrapper = styled.div`
@@ -46,7 +47,7 @@ const Header = (props) => {
       <div>
         <TotalReviews>{numberOfReviews} User Reviews</TotalReviews>
         <StarRating></StarRating>
-        <TotalOutOf>{avg_score} out 5</TotalOutOf>
+        <Rating score={avg_score}/>
       </div>
     </Wrapper>
   )

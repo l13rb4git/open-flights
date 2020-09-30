@@ -11,9 +11,8 @@ const Card = styled.div`
 `
 
 const RatingContainer = styled.div`
-`
-
-const RatingScore = styled.div`
+    display: flex;
+    flex-direction: row;
 `
 
 const Title = styled.div`
