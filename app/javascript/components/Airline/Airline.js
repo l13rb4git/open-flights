@@ -14,6 +14,12 @@ const Wrapper = styled.div`
 `
 
 const Column = styled.div`
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
     background: #fff;
     height: 100vh;
     overflow: scroll;

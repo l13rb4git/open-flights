@@ -17,6 +17,7 @@ const Field = styled.div`
 
   input {
       width: 96%;
+      font-size: 18px;
       min-height: 50px;
       border-radius: 4px;
       border: 1px solid #e6e6e6;
@@ -26,6 +27,7 @@ const Field = styled.div`
 
   textarea {
       width: 96%;
+      font-size: 18px;
       min-height: 80px;
       border-radius: 4px;
       border: 1px solid #e6e6e6;
