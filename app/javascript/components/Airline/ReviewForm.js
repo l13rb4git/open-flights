@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     padding: 20px; 
     height: 100vh;
     padding-top: 100px;
+    position: fixed;
 `
 
 const Field = styled.div`
