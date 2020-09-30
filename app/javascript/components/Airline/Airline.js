@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react'
 import axios from 'axios'
 import Header from './Header'
 import ReviewForm from './ReviewForm'
+import Review from './Review'
 import styled from 'styled-components'
 
 
@@ -24,9 +25,6 @@ const Column = styled.div`
 
 const Main = styled.div`
     padding-left: 50px;
-`
-
-const Reviews = styled.div`
 `
 
 
@@ -78,6 +76,16 @@ const Airline = (props) => {
   }
 
 
+  let reviews
+  if (loaded && airline.included) {
+    reviews = airline.included.map( (item, index) => {
+      return (
+        <Review key={index} attributes={item.attributes}/>
+      )
+    })
+  }
+
+
   return (
     <Wrapper>
       { loaded && 
@@ -87,7 +95,7 @@ const Airline = (props) => {
               <Header attributes={airline.data.attributes}
                       reviews={airline.included} 
               />
-              <Reviews></Reviews>
+              {reviews}
             </Main>
           </Column>
           <Column>
