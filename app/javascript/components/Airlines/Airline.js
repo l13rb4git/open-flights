@@ -5,8 +5,7 @@ import Rating from '../Rating/Rating'
 
 
 const Card = styled.div`
-    border: 1px solid #efefef;
-    background: #fff;
+    background: #1a2960;
 `
 
 const AirlineLogo = styled.div`
@@ -14,13 +13,14 @@ const AirlineLogo = styled.div`
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
+    padding-top: 20px;
 
     img {
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         border-radius: 100%;
         border: 1px solid #efefef;
+        background: #fff;
     }
 `
 
@@ -32,13 +32,14 @@ const AirlineName = styled.div`
 const LinkWrapper = styled.div`
     margin: 30px 0 20px 0;
     height: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
 
     a {
-        color: #fff;
-        background: #000;
+        color: #000;
+        background: #ffac05;
         border-radius: 4px;
         padding: 10px 50px;
-        border: 1px solid #000;
         width: 100%;
         text-decoration: none;
     }

@@ -5,10 +5,12 @@ import styled from 'styled-components'
 
 
 const Home = styled.div`
+    background: #9e0a07;
+    color: #fff;
     text-align: center;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
 `
 
 const Header = styled.div`
