@@ -60,9 +60,9 @@ const SubmitBtn = styled.button`
     border: 1px solid #000;
 
     &:hover {
-      background: #fff;
-      color: #000;
-      border: 1px solid #fff;
+      background: #9e0a07;
+      color: #fff;
+      border: 1px solid #000;
     }
 `
 
