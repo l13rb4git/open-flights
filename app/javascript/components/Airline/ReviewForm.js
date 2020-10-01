@@ -6,7 +6,7 @@ import Selected from './Stars/Selected'
 
 
 const Wrapper = styled.div`
-    background: #000;
+    background: #1a2960;
     padding: 20px; 
     height: 100vh;
     padding-top: 100px;
@@ -48,8 +48,7 @@ const Headline = styled.div`
 `
 
 const SubmitBtn = styled.button`
-    color: #fff;
-    background: #333;
+    background: #ffac05;
     width: 100%;
     border-radius: 4px;
     margin-top: 12px;
@@ -58,7 +57,7 @@ const SubmitBtn = styled.button`
     font-family: 'Roboto Mono', monospace;
     cursor: pointer;
     transition: ease-in-out 0.1s;
-    border: 1px solid #fff;
+    border: 1px solid #000;
 
     &:hover {
       background: #fff;
