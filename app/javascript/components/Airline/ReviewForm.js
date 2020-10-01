@@ -68,12 +68,12 @@ const SubmitBtn = styled.button`
 `
 
 const RatingContainer = styled.div`
+    color: #fff;
     text-align: center;
     border-radius: 4px;
     font-size: 18px;
-    padding: 40px 0 10px 0;
-    border: 1px solid #e6e6e6;
-    background: #fff;
+    padding: 10px 0 10px 0;
+    background: inherit;
 `
 
 const RatingTitle = styled.div`
@@ -83,7 +83,6 @@ const RatingTitle = styled.div`
 `
 
 const RatingBox = styled.div`
-    background: #fff;
     margin-top: 12px;
     display: flex;
     justify-content: center;
@@ -92,6 +91,7 @@ const RatingBox = styled.div`
 
     input {
         display: none;
+        background: inherit;
     }
 
     label {
