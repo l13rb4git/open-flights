@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     height: 100vh;
     padding-top: 100px;
     position: fixed;
+    font-family: 'Roboto Mono', monospace;
 `
 
 const Field = styled.div`
@@ -19,7 +20,8 @@ const Field = styled.div`
   input {
       width: 96%;
       font-size: 18px;
-      min-height: 50px;
+      font-family: 'Roboto Mono', monospace;
+      min-height: 40px;
       border-radius: 4px;
       border: 1px solid #e6e6e6;
       margin: 0 0 12px 0;
@@ -41,6 +43,7 @@ const Headline = styled.div`
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
+    font-style: italic;
     color: #fff;
 `
 
@@ -51,7 +54,8 @@ const SubmitBtn = styled.button`
     border-radius: 4px;
     margin-top: 12px;
     padding: 12px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
     cursor: pointer;
     transition: ease-in-out 0.1s;
     border: 1px solid #fff;

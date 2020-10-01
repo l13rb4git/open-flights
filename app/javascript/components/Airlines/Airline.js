@@ -26,6 +26,7 @@ const AirlineLogo = styled.div`
 
 const AirlineName = styled.div`
     padding: 20px 0 20px 0;
+    font-family: 'Merriweather', serif;
 `
 
 const LinkWrapper = styled.div`

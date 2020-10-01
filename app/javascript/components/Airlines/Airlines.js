@@ -15,13 +15,16 @@ const Header = styled.div`
     padding: 100px 10px 10px 10px;
 
     h1 {
-        font-size: 42px;
+        font-size: 60px;
+        font-family: 'Merriweather', serif;
     }
 `
 
 const Subheader = styled.div`
     font-weight: 300;
     font-size: 26px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
 `
 
 const Grid = styled.div`

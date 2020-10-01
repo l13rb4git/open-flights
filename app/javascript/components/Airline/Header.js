@@ -16,6 +16,7 @@ const Wrapper = styled.div`
     }
 
     h1 {
+        font-family: 'Merriweather', serif;
     }
 `
 

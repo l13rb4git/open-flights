@@ -17,12 +17,13 @@ const RatingContainer = styled.div`
 
 const Title = styled.div`
     padding: 20px 0 0 0;
-    font-size: 18px;
+    font-size: 25px;
+    padding-bottom: 4px;
 `
 
 const Description = styled.div`
     padding: 0 0 20px 0;
-    font-size: 14px;
+    font-size: 20px;
 `
 
 

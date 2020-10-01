@@ -31,6 +31,7 @@ const Column = styled.div`
 
 const Main = styled.div`
     padding-left: 50px;
+    font-family: 'Lato', sans-serif;
 `
 
 
