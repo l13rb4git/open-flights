@@ -19,6 +19,7 @@ const Title = styled.div`
     padding: 20px 0 0 0;
     font-size: 25px;
     padding-bottom: 4px;
+    text-transform: capitalize;
 `
 
 const Description = styled.div`

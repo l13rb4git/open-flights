@@ -21,6 +21,7 @@ const Field = styled.div`
       width: 96%;
       font-size: 18px;
       font-family: 'Roboto Mono', monospace;
+      text-transform: capitalize;
       min-height: 40px;
       border-radius: 4px;
       border: 1px solid #e6e6e6;
