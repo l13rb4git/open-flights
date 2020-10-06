@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 
 const Home = styled.div`
-    background: #9e0a07;
+    background: #1a2960;
     color: #fff;
     text-align: center;
     max-width: 1200px;

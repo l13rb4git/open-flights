@@ -5,7 +5,7 @@ import Rating from '../Rating/Rating'
 
 
 const Card = styled.div`
-    background: #1a2960;
+    background: #9e0a07;
 `
 
 const AirlineLogo = styled.div`
